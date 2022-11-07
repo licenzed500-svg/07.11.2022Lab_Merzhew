@@ -153,7 +153,16 @@ void task6_7()
 
 void task6_8()
 {
-
+    int n = task6_7_get_data();
+    int i = 0;
+    while(i<n)
+    {
+        if (pow(i,2)>n && i<100)
+        {
+            std::cout << i << "\n";
+            break;
+        }
+    }
 }
 
 int task6_9_get_data(signed int n = 0)
@@ -231,6 +240,7 @@ int main()
     task6_5();
     task6_6();
     task6_7();
+    task6_8(); //
     task6_9();
     task6_10();
     task6_11();
